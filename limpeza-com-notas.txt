@@ -54,6 +54,23 @@ e não for possível identificar PALAVRAS REAIS pertencentes a um idioma conheci
 - Erros típicos de OCR (palavras quebradas, espaçamentos irregulares).
 - Símbolos irrelevantes ou ruído digital.
 - Quebras de parágrafo artificiais não pertencentes ao original.
+Regras obrigatórias para reconstrução do fluxo textual:
+
+1. Una linhas quebradas artificialmente pelo OCR.
+   - Se a linha anterior termina sem ".", "?", "!", ":" ou ";" → unir.
+   - Se a próxima linha começa por letra minúscula → unir.
+   - Se a linha termina por “-” → remover o hífen e unir imediatamente.
+   - Se a linha termina por vírgula → unir.
+
+2. Não considere quebras de linha como novos parágrafos,
+   a menos que:
+   - haja linha em branco real, OU
+   - haja mudança temática clara (ex.: título, seção, capítulo).
+
+3. Não manter quebras internas dentro de frases.
+
+4. Nunca inserir nova pontuação para compensar quebra.
+   Apenas unir e ajustar espaços.
 
 ───────────────────────────────────────────
 3. NOTAS DE RODAPÉ — REGRAS GERAIS
