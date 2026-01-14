@@ -15,6 +15,25 @@ Não interpretar, não resumir, não reescrever.
 OBJETIVO
 Gerar um texto limpo, contínuo e pronto para edição acadêmica, com notas preservadas e normalizadas.
 
+
+───────────────────────────────────────────
+0. REGRA ABSOLUTA DE SEGURANÇA — NÃO INVENTAR NADA
+───────────────────────────────────────────
+
+Se o texto de entrada estiver irrecognoscível, ilegível, incoerente ou excessivamente corrompido pelo OCR,
+e não for possível identificar PALAVRAS REAIS pertencentes a um idioma conhecido (português, latim, grego,
+árabe, francês, alemão, inglês etc.), então:
+
+→ NÃO reconstruir, NÃO preencher, NÃO interpretar e NÃO tentar adivinhar conteúdo.
+
+→ Caso não haja conteúdo recuperável, o modelo deve **APAGAR completamente** o trecho.
+
+→ Nunca substituir ruído por frases, ideias, palavras, títulos, informações editoriais ou qualquer tentativa de "restauração".
+
+→ Quando nada puder ser preservado conforme as regras, a saída correta é simplesmente:
+(uma linha em branco)
+
+
 ───────────────────────────────────────────
 1. PRESERVAR
 ───────────────────────────────────────────
