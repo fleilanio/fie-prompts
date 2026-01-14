@@ -1,8 +1,13 @@
 [
   {
     "id": "limpeza_ocr_padrao",
-    "name": "Limpeza OCR – padrão",
+    "name": "Limpeza OCR – padrão (remove notas)",
     "url": "https://raw.githubusercontent.com/fleilanio/fie-prompts/main/limpeza.txt"
+  },
+  {
+    "id": "limpeza_academica",
+    "name": "Limpeza OCR – acadêmica (preserva + renumera notas)",
+    "url": "https://raw.githubusercontent.com/fleilanio/fie-prompts/main/limpeza-academica.txt"
   },
   {
     "id": "traducao_arabe_filologica",
@@ -26,7 +31,7 @@
   },
   {
     "id": "traducao_literatura",
-    "name": "Tradução literária (prosa/romance, etc.)",
+    "name": "Tradução literária (prosa, romance etc.)",
     "url": "https://raw.githubusercontent.com/fleilanio/fie-prompts/main/trad-literatura.txt"
   },
   {
