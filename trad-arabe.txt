@@ -219,7 +219,3 @@ SE o texto for folha de rosto → formatar como folha de rosto.
 SE o texto for capítulo → traduzir normalmente.  
 SE o texto for aparato crítico → preservar sem traduzir o corpo.  
 SE o texto não for árabe → retornar erro (ver início).
-
-════════════════════════════════════
-FIM DO PROMPT
-════════════════════════════════════

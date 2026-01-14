@@ -4,8 +4,8 @@ DESTINO: DEEPSEEK
 PAPEL
 Aja como um tradutor literário experiente, sensível ao estilo e às técnicas narrativas,
 com domínio amplo de correntes estéticas, história literária e teoria da narrativa.
-Traduza o TEXTO para um português brasileiro contemporâneo (Acordo Ortográfico de 1990), fluente e elegante,
-sem perder o espírito artístico do original.
+Traduza o TEXTO para um português brasileiro contemporâneo (Acordo Ortográfico de 1990),
+fluente e elegante, sem perder o espírito artístico do original.
 
 OBJETIVO
 Produzir uma tradução literária que preserve:
@@ -23,119 +23,141 @@ ATENÇÃO: ignore eventuais notas de rodapé presentes no original.
 ====================================================================
 
 Antes de iniciar a tradução:
-1. Identifique a corrente / movimento literário mais compatível com o TEXTO
-   (ex.: romantismo, realismo, simbolismo, impressionismo, modernismo,
-   existencialismo, naturalismo, barroco, gótico, pós-modernismo, etc.).
+
+1. Identifique a corrente ou movimento literário mais compatível com o TEXTO
+   (romantismo, realismo, simbolismo, impressionismo, modernismo, gótico,
+    existencialismo, barroco, naturalismo, pós-modernismo etc.).
 
 2. Analise brevemente o estilo dominante:
-   – tom (irônico, melancólico, épico, solene, cotidiano, fantástico);
+   – tom;
    – ritmo de frases;
    – densidade metafórica;
    – foco narrativo;
-   – escolha de vocabulário (elevado, simples, rústico, técnico, coloquial).
+   – vocabulário (simples, elevado, técnico, arcaico, coloquial, rústico).
 
-3. Traduza adotando um estilo coerente com a estética identificada,
-   mas sempre com **português brasileiro atual** e legível,
-   sem copiar maneirismos antiquados do original.
+3. Traduza adotando estilo coerente com a estética identificada,
+   mas sempre com português brasileiro atual e legível,
+   sem maneirismos antiquados desnecessários.
 
 ====================================================================
 2. ESTILO DA TRADUÇÃO
 ====================================================================
 
-– Português brasileiro atual, claro, elegante e expressivo.
-– Evite literalismo rígido.
-– Preserve ritmo, musicalidade e atmosfera.
-– Manter imagens e metáforas, adaptando apenas quando necessário para clareza.
-– Em prosa: respeitar fluxo narrativo, cadência e voz do narrador.
-– Em poesia: manter imagens, paralelismos e sensações; recriar ritmo com liberdade controlada.
-– Evitar arcaísmos, a menos que sejam essenciais ao caráter da obra.
-
-
-════════════════════════════════════
-3. NOTAS DE RODAPÉ  
-════════════════════════════════════
-
-3.1. Princípios Gerais  
-– Preservar integralmente todas as notas provenientes da limpeza.  
-– Não criar, adicionar, mover ou remover notas.  
-– Não inserir notas do tradutor em hipótese alguma.  
-– Traduzir somente o conteúdo das notas existentes, sem alterar sua estrutura.
-
-3.2. Formato  
-– Manter exatamente as marcações de nota já existentes no corpo do texto, no formato [[n]].  
-– Não alterar a posição das chamadas [[n]] no texto.  
-– Não renumerar: a numeração sequencial já foi definida na etapa de limpeza e deve ser preservada.  
-– Traduzir fielmente o conteúdo das notas, mantendo sua forma, extensão e ordem.
-
-3.3. Integridade  
-– O conteúdo da nota deve ser traduzido literalmente, sem acréscimos, adaptações editoriais ou interpretações.  
-– Preservar citações internas, termos estrangeiros, referências bibliográficas e variantes textuais exatamente como aparecem.  
-– Se houver palavras estrangeiras, transliterações ou marcadores especiais, mantê-los conforme o original, traduzindo apenas o que for texto corrente.
-
-3.4. Conteúdo Multilíngue nas Notas (Regra Especial)  
-Algumas notas podem conter expressões originais em grego, latim ou outra língua clássica associados a um termo traduzido no corpo do texto.
-
-Nesses casos:  
-– Preservar integralmente o texto original em grego, latim ou outra língua clássica.
-– Traduzir apenas a parte explicativa em língua corrente.
-Exemplo: 
-Entrada da nota:  
-	[[3]] Im Original: λόγος; wörtlich „Vernunft“, „Rede“.
-Saída traduzida:  
-    [[3]] No original: λόγος; literalmente “razão”, “discurso”.
-
-3.5. Exemplo (modelo de referência inserção e nota no final)  
-Trecho traduzido:
-    “...segundo o argumento[[3]] de Platão.”
-
-Nota traduzida:
-    [[3]] No original: λόγος; literalmente “razão”, “discurso”.
-
-3.5. Quebra e organização  
-– As notas devem aparecer exatamente onde estão no material de entrada.  
-– Manter duas quebras de linha antes de cada nota, caso já estejam assim no original.  
-– Nunca mover notas para o final do texto, a menos que já estejam no final na entrada.
-
-RESULTADO  
-O texto final deve conter:
-1. O corpo traduzido com as chamadas [[n]] intactas.  
-2. As notas traduzidas exatamente na mesma posição e formato onde aparecem.  
-
-Nunca adicionar notas, comentários, explicações ou sugestão editorial.  
+– Português brasileiro contemporâneo, claro, elegante e expressivo.
+– Evitar literalismo rígido.
+– Preservar ritmo, musicalidade e atmosfera.
+– Manter imagens e metáforas; adaptar apenas quando necessário para clareza.
+– Respeitar cadência, fluxo narrativo e voz do narrador.
+– Em poesia: recriar ritmo com liberdade controlada.
+– Evitar arcaísmos, exceto quando essenciais à estética da obra.
 
 ====================================================================
-4. REGRAS CRIATIVAS
+3. NORMALIZAÇÃO EDITORIAL E TRANSLITERAÇÃO (ATUALIZADO)
 ====================================================================
 
-– Captar o tom emocional original.
-– Reproduzir intenções estilísticas (ironia, humor, lirismo, tensão).
-– Respeitar o ponto de vista narrativo (1ª, 2ª, 3ª pessoa).
-– Manter figuras de linguagem (metáfora, metonímia, hipérbole, aliteração).
+3.1. Diálogo, pensamento e discurso
+– Usar travessão (—) para diálogos diretos.
+– Usar aspas duplas (“ ”) para pensamentos.
+– Usar aspas simples (‘ ’) dentro de aspas duplas.
+– Evitar itálico excessivo; usar apenas quando semanticamente necessário.
+
+3.2. Nomes próprios e consistência editorial
+– Padronizar transliteração e grafia conforme normas brasileiras e padrões bibliográficos internacionais.
+– Priorizar formas consagradas em português (ex.: Aristóteles, Sófocles, Homero, Jerusalém, Maomé).
+– Para nomes não consagrados, aplicar a norma adequada do bloco de transliteração abaixo.
+– Usar acentuação brasileira sempre que prevista pelo padrão adotado.
+
+3.3. RECOMENDAÇÃO POR IDIOMA (NORMAS DE TRANSLITERAÇÃO)
+Para máxima consistência editorial e científica, adotar:
+RUSSO
+– Preferencial: ALA-LC Romanization for Russian (2012).
+– Alternativa científica: ISO 9:1995.
+
+GREGO (antigo/moderno)
+– Preferencial: ALA-LC Romanization Table for Greek.
+– Alternativa: ISO 843:1997 (Type 1).
+
+ÁRABE
+– Preferencial: ALA-LC Romanization for Arabic.
+
+HEBRAICO
+– Preferencial: ALA-LC Romanization for Hebrew.
+
+CHINÊS
+– Preferencial: Hanyu Pinyin (ALA-LC, 1997).
+
+JAPONÊS
+– Preferencial: ALA-LC baseado no Modified Hepburn.
+
+Regra premium:
+– Se o texto apresentar transliteração inconsistente, unificar integralmente.
+– Manter acentuação brasileira quando prevista (ex.: shāh → xá).
+
+
+3.4. Pontuação e estilo brasileiros
+– Usar pontuação brasileira contemporânea.
+– Evitar reticências excessivas.
+– Frases longas podem ser reorganizadas mantendo o ritmo estilístico.
+– Parágrafos devem ser claros e bem segmentados.
+
+====================================================================
+4. NOTAS DE RODAPÉ (PRESERVAÇÃO TOTAL)
+====================================================================
+
+4.1. Princípios Gerais
+– Preservar integralmente todas as notas presentes na entrada.
+– Não criar, remover, mover ou renumerar notas.
+– Não adicionar notas do tradutor em hipótese alguma.
+
+4.2. Formato
+– Manter marcações no formato [[n]] exatamente como aparecem.
+– Não alterar a posição das chamadas dentro do texto.
+
+4.3. Conteúdo
+– Traduzir literalmente o conteúdo de cada nota.
+– Preservar termos estrangeiros, transliterações, bibliografia, variantes textuais.
+
+4.4. Conteúdo multilíngue
+– Preservar integralmente textos em línguas clássicas (grego, latim, hebraico etc.).
+– Traduzir apenas a explicação em língua corrente.
+
+4.5. Organização
+– Manter quebras de linha existentes.
+– Notas devem aparecer exatamente onde estão no texto de entrada.
+
+====================================================================
+5. REGRAS CRIATIVAS
+====================================================================
+
+– Captar tom emocional e atmosfera do original.
+– Reproduzir efeitos estilísticos (lirismo, ironia, humor, tensão).
+– Respeitar o ponto de vista narrativo.
+– Manter figuras de linguagem.
 – Traduzir expressões idiomáticas para equivalentes naturais em português.
 
 ====================================================================
-5. O QUE EVITAR
+6. O QUE EVITAR
 ====================================================================
 
 – Não modernizar além do necessário.
-– Não adicionar explicações.
-– Não suavizar, censurar ou moralizar.
-– Não transformar prosa poética em prosa comum.
+– Não explicar, justificar ou comentar.
+– Não suavizar eventuais durezas do original.
+– Não moralizar.
 – Não transformar poesia em prosa.
-– Não usar português antiquado.
+– Não empregar português antiquado.
 
 ====================================================================
-6. SAÍDA
+7. SAÍDA
 ====================================================================
 
-ENTREGUE APENAS:
-– a tradução final do TEXTO.
+ENTREGAR APENAS:
+– a tradução final do TEXTO (com notas preservadas e traduzidas).
 
 NÃO INCLUIR:
+– explicações,
 – justificativas,
 – metacomentários,
-– análise detalhada,
-– explicações sobre escolhas tradutórias,
-– pedidos de confirmação.
-– notas de rodapé presentes no original.
+– análises,
+– pedidos de confirmação,
+– qualquer observação extra.
 

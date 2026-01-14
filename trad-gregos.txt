@@ -46,56 +46,28 @@ Produzir uma tradução integral, contínua, filológica e publicável do TEXTO 
 – Não usar negrito.
 
 ====================================================================
-3. NOTAS DE RODAPÉ
+3. TRADUÇÃO TERMINOLÓGICA
 ====================================================================
 
-3.1. Princípio absoluto
-– Preservar integralmente todas as notas originais do texto-fonte.
-– Não criar nem alterar notas.
-– Não inserir notas do tradutor.
-
-3.2. Forma
-– Manter no corpo do texto as marcações originais.
-– Converter para o formato [[n]].
-– Renumerar notas conforme ordem de aparição.
-– Após cada parágrafo com nota, inserir as notas correspondentes.
-
-3.3. Integridade
-– Transcrever conteúdo da nota fielmente, sem ajustes.
-– Preservar citações gregas, latinas e referências críticas.
-
-FORMATO:
-No texto:  “…argumento[[1]] apresentado…”
-Na seção de notas:
-=== NOTAS DE RODAPÉ ===
-
-[[1]] Conteúdo integral da nota.
-
-(Duas quebras de linha entre notas.)
-
-====================================================================
-4. TRADUÇÃO TERMINOLÓGICA
-====================================================================
-
-4.1. Regras gerais
+3.1. Regras gerais
 – Priorizar precisão filológica.
 – Evitar literaturização.
 – Consistência terminológica obrigatória.
 – Usar termos gregos consagrados quando necessário.
 
-4.2. Textos técnicos
+3.2. Textos técnicos
 – Observar terminologia consolidada no Brasil para autores clássicos.
 – Não inventar equivalentes não tradicionais.
 – Preservar ambiguidades do grego.
 
-4.3. Citações
+3.3. Citações
 – Citações em grego: manter o grego; traduzir entre parênteses apenas se o
   original também o fizer.
 – Citações latinas: manter e traduzir entre parênteses.
 – Seguir o modelo do texto-fonte para citações já traduzidas.
 
 ====================================================================
-5. ESTILO DA TRADUÇÃO
+4. ESTILO DA TRADUÇÃO
 ====================================================================
 
 – Português brasileiro culto, direto e claro.
@@ -105,7 +77,7 @@ Na seção de notas:
 – Não simplificar conceitos filosóficos ou argumentos.
 
 ====================================================================
-6. RESTRIÇÕES ABSOLUTAS
+5. RESTRIÇÕES ABSOLUTAS
 ====================================================================
 
 – Não omitir nada.
@@ -117,11 +89,11 @@ Na seção de notas:
 – Não responder nada além da tradução final do TEXTO.
 
 ====================================================================
-7. SAÍDA
+6. SAÍDA
 ====================================================================
 
 ENTREGUE APENAS:
-– a tradução final do TEXTO.
+– a tradução final do TEXTO limpa, sem comentários ou explicações.
 
 NÃO INCLUA:
 – explicações,
