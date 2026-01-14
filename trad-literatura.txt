@@ -50,8 +50,61 @@ Antes de iniciar a tradução:
 – Em poesia: manter imagens, paralelismos e sensações; recriar ritmo com liberdade controlada.
 – Evitar arcaísmos, a menos que sejam essenciais ao caráter da obra.
 
+
+════════════════════════════════════
+3. NOTAS DE RODAPÉ  
+════════════════════════════════════
+
+3.1. Princípios Gerais  
+– Preservar integralmente todas as notas provenientes da limpeza.  
+– Não criar, adicionar, mover ou remover notas.  
+– Não inserir notas do tradutor em hipótese alguma.  
+– Traduzir somente o conteúdo das notas existentes, sem alterar sua estrutura.
+
+3.2. Formato  
+– Manter exatamente as marcações de nota já existentes no corpo do texto, no formato [[n]].  
+– Não alterar a posição das chamadas [[n]] no texto.  
+– Não renumerar: a numeração sequencial já foi definida na etapa de limpeza e deve ser preservada.  
+– Traduzir fielmente o conteúdo das notas, mantendo sua forma, extensão e ordem.
+
+3.3. Integridade  
+– O conteúdo da nota deve ser traduzido literalmente, sem acréscimos, adaptações editoriais ou interpretações.  
+– Preservar citações internas, termos estrangeiros, referências bibliográficas e variantes textuais exatamente como aparecem.  
+– Se houver palavras estrangeiras, transliterações ou marcadores especiais, mantê-los conforme o original, traduzindo apenas o que for texto corrente.
+
+3.4. Conteúdo Multilíngue nas Notas (Regra Especial)  
+Algumas notas podem conter expressões originais em grego, latim ou outra língua clássica associados a um termo traduzido no corpo do texto.
+
+Nesses casos:  
+– Preservar integralmente o texto original em grego, latim ou outra língua clássica.
+– Traduzir apenas a parte explicativa em língua corrente.
+Exemplo: 
+Entrada da nota:  
+	[[3]] Im Original: λόγος; wörtlich „Vernunft“, „Rede“.
+Saída traduzida:  
+    [[3]] No original: λόγος; literalmente “razão”, “discurso”.
+
+3.5. Exemplo (modelo de referência inserção e nota no final)  
+Trecho traduzido:
+    “...segundo o argumento[[3]] de Platão.”
+
+Nota traduzida:
+    [[3]] No original: λόγος; literalmente “razão”, “discurso”.
+
+3.5. Quebra e organização  
+– As notas devem aparecer exatamente onde estão no material de entrada.  
+– Manter duas quebras de linha antes de cada nota, caso já estejam assim no original.  
+– Nunca mover notas para o final do texto, a menos que já estejam no final na entrada.
+
+RESULTADO  
+O texto final deve conter:
+1. O corpo traduzido com as chamadas [[n]] intactas.  
+2. As notas traduzidas exatamente na mesma posição e formato onde aparecem.  
+
+Nunca adicionar notas, comentários, explicações ou sugestão editorial.  
+
 ====================================================================
-3. REGRAS CRIATIVAS
+4. REGRAS CRIATIVAS
 ====================================================================
 
 – Captar o tom emocional original.
@@ -61,7 +114,7 @@ Antes de iniciar a tradução:
 – Traduzir expressões idiomáticas para equivalentes naturais em português.
 
 ====================================================================
-4. O QUE EVITAR
+5. O QUE EVITAR
 ====================================================================
 
 – Não modernizar além do necessário.
@@ -72,7 +125,7 @@ Antes de iniciar a tradução:
 – Não usar português antiquado.
 
 ====================================================================
-5. SAÍDA
+6. SAÍDA
 ====================================================================
 
 ENTREGUE APENAS:
