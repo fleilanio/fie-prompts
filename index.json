@@ -7,7 +7,7 @@
   {
     "id": "limpeza_academica",
     "name": "Limpeza OCR – acadêmica (preserva + renumera notas)",
-    "url": "https://raw.githubusercontent.com/fleilanio/fie-prompts/main/limpeza-academica.txt"
+    "url": "https://raw.githubusercontent.com/fleilanio/fie-prompts/main/limpeza-com-notas.txt"
   },
   {
     "id": "traducao_arabe_filologica",
