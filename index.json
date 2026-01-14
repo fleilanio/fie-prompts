@@ -1,0 +1,42 @@
+[
+  {
+    "id": "limpeza_ocr_padrao",
+    "name": "Limpeza OCR – padrão",
+    "url": "https://raw.githubusercontent.com/fleilanio/fie-prompts/main/limpeza.txt"
+  },
+  {
+    "id": "traducao_arabe_filologica",
+    "name": "Tradução árabe (filológica)",
+    "url": "https://raw.githubusercontent.com/fleilanio/fie-prompts/main/trad-arabe.txt"
+  },
+  {
+    "id": "traducao_gregos",
+    "name": "Tradução grego clássico",
+    "url": "https://raw.githubusercontent.com/fleilanio/fie-prompts/main/trad-gregos.txt"
+  },
+  {
+    "id": "traducao_latim",
+    "name": "Tradução latim clássico/escolástico",
+    "url": "https://raw.githubusercontent.com/fleilanio/fie-prompts/main/trad-latim.txt"
+  },
+  {
+    "id": "traducao_ocidental",
+    "name": "Tradução línguas ocidentais (acadêmica)",
+    "url": "https://raw.githubusercontent.com/fleilanio/fie-prompts/main/trad-ocidental.txt"
+  },
+  {
+    "id": "traducao_literatura",
+    "name": "Tradução literária (prosa/romance, etc.)",
+    "url": "https://raw.githubusercontent.com/fleilanio/fie-prompts/main/trad-literatura.txt"
+  },
+  {
+    "id": "traducao_teatro",
+    "name": "Tradução para teatro",
+    "url": "https://raw.githubusercontent.com/fleilanio/fie-prompts/main/trad-teartro.txt"
+  },
+  {
+    "id": "enriquecimento_pos_traducao",
+    "name": "Enriquecimento pós-tradução (notas + relatório)",
+    "url": "https://raw.githubusercontent.com/fleilanio/fie-prompts/main/enriquecimento.txt"
+  }
+]
