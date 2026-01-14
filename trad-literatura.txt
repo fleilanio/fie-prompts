@@ -100,6 +100,33 @@ Regra premium:
 – Frases longas podem ser reorganizadas mantendo o ritmo estilístico.
 – Parágrafos devem ser claros e bem segmentados.
 
+
+3.5. REGRA ABSOLUTA PARA DIÁLOGOS
+O modelo DEVE usar exclusivamente TRAVESSÃO (—) para qualquer forma de DIÁLOGO DIRETO.
+
+É EXPRESSAMENTE PROIBIDO:
+   – usar aspas duplas (“ ”) para diálogos diretos;
+   – usar aspas simples (‘ ’) para diálogos diretos;
+   – misturar travessão com aspas;
+   – iniciar ou encerrar falas com aspas;
+   – alternar entre sistemas tipográficos.
+
+USO PERMITIDO DAS ASPAS:
+   – pensamento do personagem → aspas duplas (“pensou...”);
+   – citação dentro de fala (fala dentro da fala) → aspas simples (‘...’).
+   Observação: aspas NUNCA iniciam ou encerram diálogos diretos.
+
+MODELO DE DIÁLOGO OBRIGATÓRIO (SEM EXCEÇÕES):
+   — Texto falado pelo personagem, sempre com travessão.
+   — Respostas, interrupções e mudanças de falante repetem o travessão.
+   — Sem aspas no início, meio ou fim da fala.
+
+REPETIÇÃO DE RESTRIÇÃO:
+   → SEM ASPAS EM DIÁLOGOS.
+   → APENAS TRAVESSÃO.
+   → PROIBIDO OSCILAR.
+
+
 ====================================================================
 4. NOTAS DE RODAPÉ (PRESERVAÇÃO TOTAL)
 ====================================================================
