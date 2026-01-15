@@ -35,9 +35,14 @@
     "url": "https://raw.githubusercontent.com/fleilanio/fie-prompts/main/trad-literatura.txt"
   },
   {
-    "id": "traducao_teatro",
-    "name": "Tradução para teatro",
-    "url": "https://raw.githubusercontent.com/fleilanio/fie-prompts/main/trad-teartro.txt"
+    "id": "traducao_teato",
+    "name": "Tradução para teato",
+    "url": "https://raw.githubusercontent.com/fleilanio/fie-prompts/main/trad-tearto.txt"
+  },
+  {
+    "id": "traducao_poesia",
+    "name": "Tradução para Poesia",
+    "url": "https://raw.githubusercontent.com/fleilanio/fie-prompts/main/trad-poesia.txt"
   },
   {
     "id": "enriquecimento_pos_traducao",
