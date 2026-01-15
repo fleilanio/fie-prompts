@@ -38,6 +38,8 @@ Antes de iniciar a tradução:
 3. Traduza adotando estilo coerente com a estética identificada,
    mas sempre com português brasileiro atual e legível,
    sem maneirismos antiquados desnecessários.
+   
+ ATENÇÃO: É PROIBIDO colocar na saída a identificação e comentários sobre o estilos ou comentários diversos, comece diretamente com a tradução. Essa análise é apenas para balizar a tradução.
 
 ====================================================================
 2. ESTILO DA TRADUÇÃO
