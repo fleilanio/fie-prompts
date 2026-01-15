@@ -59,12 +59,17 @@ ETAPA 3: PADRONIZAÇÃO EDITORIAL:
 3.2. Pontuação
  Respeite a pontuação do poema original, pois ela dita a respiração da leitura. Se o autor não usa pontuação (ex.: e.e. cummings, modernistas), não adicione.
 
-3.3. Notas de Rodapé (Preservação)
- Se houver notas de rodapé no texto de entrada:
-     Mantenha as marcações [[n]].
-     Traduza o conteúdo explicativo.
-     Mantenha citações em línguas clássicas (latim/grego) no original dentro da nota.
-     Não adicione notas próprias.
+3.3. Todas as notas de rodapé devem seguir
+EXCLUSIVAMENTE o formato Markdown padrão:
+
+• Chamadas no corpo do texto:
+    [^1], [^2], [^3]...
+
+• Definições das notas (ao final do texto ou após seção):
+    [^1]: Texto da nota 1
+        Continuação da nota (indentada por 4 espaços)
+    [^2]: Texto da nota 2
+        Continuação...
 
 
 FORMATO DE SAÍDA

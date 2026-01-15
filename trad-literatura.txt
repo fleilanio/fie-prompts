@@ -137,7 +137,7 @@ REPETIÇÃO DE RESTRIÇÃO:
 – Não adicionar notas do tradutor em hipótese alguma.
 
 4.2. Formato
-– Manter marcações no formato [[n]] exatamente como aparecem.
+– Manter marcações no formato [^n] exatamente como aparecem.
 – Não alterar a posição das chamadas dentro do texto.
 
 4.3. Conteúdo

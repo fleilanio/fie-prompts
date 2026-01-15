@@ -52,55 +52,116 @@ Produzir uma tradução integral, contínua, precisa, filológica e publicável 
 – Não usar negrito.
 
 ====================================================================
-3. NOTAS DE RODAPÉ
+3. NOTAS DE RODAPÉ (FORMATO MARKDOWN)
 ====================================================================
-3.1. Princípios Gerais  
-– Preservar integralmente todas as notas provenientes da limpeza.  
-– Não criar, adicionar, mover ou remover notas.  
-– Não inserir notas do tradutor em hipótese alguma.  
-– Traduzir somente o conteúdo das notas existentes, sem alterar sua estrutura.
+Todas as notas de rodapé devem seguir
+EXCLUSIVAMENTE o formato Markdown padrão:
 
-3.2. Formato  
-– Manter exatamente as marcações de nota já existentes no corpo do texto, no formato [[n]].  
-– Não alterar a posição das chamadas [[n]] no texto.  
-– Não renumerar: a numeração sequencial já foi definida na etapa de limpeza e deve ser preservada.  
-– Traduzir fielmente o conteúdo das notas, mantendo sua forma, extensão e ordem.
+• Chamadas no corpo do texto:
+    [^1], [^2], [^3]...
 
-3.3. Integridade  
-– O conteúdo da nota deve ser traduzido literalmente, sem acréscimos, adaptações editoriais ou interpretações.  
-– Preservar citações internas, termos estrangeiros, referências bibliográficas e variantes textuais exatamente como aparecem.  
-– Se houver palavras estrangeiras, transliterações ou marcadores especiais, mantê-los conforme o original, traduzindo apenas o que for texto corrente.
+• Definições das notas (ao final do texto ou após seção):
+    [^1]: Texto da nota 1
+        Continuação da nota (indentada por 4 espaços)
+    [^2]: Texto da nota 2
+        Continuação...
 
-3.4. Conteúdo Multilíngue nas Notas (Regra Especial)  
-Algumas notas podem conter expressões originais em grego, latim ou outra língua clássica associados a um termo traduzido no corpo do texto.
+Regras obrigatórias:
 
-Nesses casos:  
-– Preservar integralmente o texto original em grego, latim ou outra língua clássica.
-– Traduzir apenas a parte explicativa em língua corrente.
-Exemplo: 
-Entrada da nota:  
-	[[3]] Im Original: λόγος; wörtlich „Vernunft“, „Rede“.
-Saída traduzida:  
-    [[3]] No original: λόγος; literalmente “razão”, “discurso”.
+1. Preservar integralmente o conteúdo de todas as notas.
+2. Padronizar todas as chamadas de nota para o formato `[^n]`.
+3. A numeração deve ser sequencial, ignorando a numeração original.
+4. Notas quebradas, fragmentadas ou espalhadas pelo OCR devem ser unidas.
+5. As definições das notas devem ser agrupadas ao final do texto, em bloco único.
+6. Cada nota deve ter APENAS UMA definição.
+7. Nenhuma nota deve permanecer no corpo do texto como texto corrido: todo o conteúdo deve ir para a definição `[^n]: ...`.
+8. Nunca traduzir ou alterar a marcação `[^n]` — apenas o conteúdo.
+9. Mesmo que não exista bloco de notas no original, crie as definições.
 
-3.5. Exemplo (modelo de referência inserção e nota no final)  
-Trecho traduzido:
-    “...segundo o argumento[[3]] de Platão.”
+───────────────────────────────────────────
+FORMAS CORROMPIDAS DE NOTA (OCR) QUE DEVEM SER NORMALIZADAS
+───────────────────────────────────────────
 
-Nota traduzida:
-    [[3]] No original: λόγος; literalmente “razão”, “discurso”.
+O modelo deve reconhecer automaticamente chamadas irregulares de nota e
+normalizá-las para o padrão Markdown `[^n]`.  
+Os seguintes padrões são considerados potenciais indicações de nota:
 
-3.5. Quebra e organização  
-– As notas devem aparecer exatamente onde estão no material de entrada.  
-– Manter duas quebras de linha antes de cada nota, caso já estejam assim no original.  
-– Nunca mover notas para o final do texto, a menos que já estejam no final na entrada.
+• Superíndices:
+    ¹ ² ³ ⁴ etc.
 
-RESULTADO  
-O texto final deve conter:
-1. O corpo traduzido com as chamadas [[n]] intactas.  
-2. As notas traduzidas exatamente na mesma posição e formato onde aparecem.  
+• Entre parênteses:
+    (1), (2), (12)
+    (¹), (²), (¹²)
 
-Nunca adicionar notas, comentários, explicações ou sugestão editorial.  
+• Números soltos após uma palavra:
+    Kant 1
+    argumento 3
+
+• Formatos quebrados:
+    ( 2 ),  (n. 3)
+
+• Chamadas grudadas ao texto:
+    Heidegger3
+    fenomenológica¹
+
+• Notas listadas ao pé da página:
+    1. Texto da nota
+    2) Texto da nota
+    3 – Texto da nota
+    [3] Texto da nota
+
+Outros sinais possíveis:
+    n.3, no.4, nota 5, (ver 7)
+
+Regra geral:
+Sempre que um número parecer indicar nota de rodapé, converta:
+
+→ para chamada no corpo:
+      [^n]
+
+→ para definição ao final:
+      [^n]: texto da nota correspondente
+
+───────────────────────────────────────────
+REGRAS DE LIMPEZA E AGREGAÇÃO
+───────────────────────────────────────────
+
+• Notas duplicadas devem ser unificadas.
+• Quebras de linha artificiais dentro da mesma nota devem ser removidas.
+• Se a nota tiver continuação, todas as linhas subsequentes devem ser indentadas por 4 espaços.
+• Conteúdos como “ibid.” ou “idem” devem ser preservados, não interpretados.
+• Remover qualquer numeração residual do OCR.
+- Organize as notas ao final em uma seção === NOTAS DE RODAPÉ ===.
+- Saída apenas em texto puro.
+- Chamadas no corpo: [^1], [^2] [^3]...
+- Lista final de notas: uma nota por linha, duas quebras de linha entre as notas.
+
+───────────────────────────────────────────
+EXEMPLOS (ANTES → DEPOIS)
+───────────────────────────────────────────
+
+ANTES (OCR):
+    Heidegger3 afirma que (...)
+    3. Texto da nota
+    continua
+    mais uma linha
+
+DEPOIS:
+    Heidegger[^1] afirma que (...)
+
+    [^1]: Texto da nota
+        continua
+        mais uma linha
+
+ANTES (OCR):
+    Kant (1) discute (...)
+    (1) Passagem extraída de (...)
+
+DEPOIS:
+    Kant[^1] discute (...)
+
+    [^1]: Passagem extraída de (...)
+
 
 ====================================================================
 4. TRADUÇÃO TERMINOLÓGICA

@@ -15,7 +15,7 @@ Produzir uma tradução integral, contínua, precisa e publicável do TEXTO forn
 – Respeite integralmente a estrutura do texto-fonte.  
 – Mantenha a ordem dos parágrafos, divisões, seções e subtítulos.  
 – Não crie títulos inexistentes.  
-– Preserve marcações explícitas como: ***, —, §, notas, epígrafes, blocos de citação, itálicos originais.  
+– Preserve marcações explícitas como: , —, §, notas, epígrafes, blocos de citação, itálicos originais.  
 – Reproduza citações bibliográficas integralmente.
 
 1.2. Paginação (se houver)  
@@ -37,86 +37,146 @@ Produzir uma tradução integral, contínua, precisa e publicável do TEXTO forn
 
 2.2. Itálico e títulos  
 – Usar itálico para:  
-  * títulos de obras;  
-  * termos estrangeiros;  
-  * conceitos técnicos se assim estiver no original.  
+   títulos de obras;  
+   termos estrangeiros;  
+   conceitos técnicos se assim estiver no original.  
 – Não usar negrito.
 
+───────────────────────────────────────────
+3. NOTAS DE RODAPÉ — REGRAS GERAIS (FORMATO MARKDOWN)
+───────────────────────────────────────────
+
+Todas as notas de rodapé devem seguir
+EXCLUSIVAMENTE o formato Markdown padrão:
+
+• Chamadas no corpo do texto:
+    [^1], [^2], [^3]...
+
+• Definições das notas (ao final do texto ou após seção):
+    [^1]: Texto da nota 1
+        Continuação da nota (indentada por 4 espaços)
+    [^2]: Texto da nota 2
+        Continuação...
+
+Regras obrigatórias:
+
+1. Preservar integralmente o conteúdo de todas as notas.
+2. Padronizar todas as chamadas de nota para o formato `[^n]`.
+3. A numeração deve ser sequencial, ignorando a numeração original.
+4. Notas quebradas, fragmentadas ou espalhadas pelo OCR devem ser unidas.
+5. As definições das notas devem ser agrupadas ao final do texto, em bloco único.
+6. Cada nota deve ter APENAS UMA definição.
+7. Nenhuma nota deve permanecer no corpo do texto como texto corrido: todo o conteúdo deve ir para a definição `[^n]: ...`.
+8. Nunca traduzir ou alterar a marcação `[^n]` — apenas o conteúdo.
+9. Mesmo que não exista bloco de notas no original, crie as definições.
+
+───────────────────────────────────────────
+4. FORMAS CORROMPIDAS DE NOTA (OCR) QUE DEVEM SER NORMALIZADAS
+───────────────────────────────────────────
+
+O modelo deve reconhecer automaticamente chamadas irregulares de nota e
+normalizá-las para o padrão Markdown `[^n]`.  
+Os seguintes padrões são considerados potenciais indicações de nota:
+
+• Superíndices:
+    ¹ ² ³ ⁴ etc.
+
+• Entre parênteses:
+    (1), (2), (12)
+    (¹), (²), (¹²)
+
+• Números soltos após uma palavra:
+    Kant 1
+    argumento 3
+
+• Formatos quebrados:
+    ( 2 ),  (n. 3)
+
+• Chamadas grudadas ao texto:
+    Heidegger3
+    fenomenológica¹
+
+• Notas listadas ao pé da página:
+    1. Texto da nota
+    2) Texto da nota
+    3 – Texto da nota
+    [3] Texto da nota
+
+Outros sinais possíveis:
+    n.3, no.4, nota 5, (ver 7)
+
+Regra geral:
+Sempre que um número parecer indicar nota de rodapé, converta:
+
+→ para chamada no corpo:
+      [^n]
+
+→ para definição ao final:
+      [^n]: texto da nota correspondente
+
+───────────────────────────────────────────
+5. REGRAS DE LIMPEZA E AGREGAÇÃO
+───────────────────────────────────────────
+
+• Notas duplicadas devem ser unificadas.
+• Quebras de linha artificiais dentro da mesma nota devem ser removidas.
+• Se a nota tiver continuação, todas as linhas subsequentes devem ser indentadas por 4 espaços.
+• Conteúdos como “ibid.” ou “idem” devem ser preservados, não interpretados.
+• Remover qualquer numeração residual do OCR.
+- Organize as notas ao final em uma seção === NOTAS DE RODAPÉ ===.
+- Saída apenas em texto puro.
+- Chamadas no corpo: [^1], [^2] [^3]...
+- Lista final de notas: uma nota por linha, duas quebras de linha entre as notas.
+
+───────────────────────────────────────────
+6. EXEMPLOS (ANTES → DEPOIS)
+───────────────────────────────────────────
+
+ANTES (OCR):
+    Heidegger3 afirma que (...)
+    3. Texto da nota
+    continua
+    mais uma linha
+
+DEPOIS:
+    Heidegger[^1] afirma que (...)
+
+    [^1]: Texto da nota
+        continua
+        mais uma linha
+
+ANTES (OCR):
+    Kant (1) discute (...)
+    (1) Passagem extraída de (...)
+
+DEPOIS:
+    Kant[^1] discute (...)
+
+    [^1]: Passagem extraída de (...)
+
+
 ════════════════════════════════════
-3. NOTAS DE RODAPÉ  
+7. TRADUÇÃO TERMINOLÓGICA
 ════════════════════════════════════
 
-3.1. Princípios Gerais  
-– Preservar integralmente todas as notas provenientes da limpeza.  
-– Não criar, adicionar, mover ou remover notas.  
-– Não inserir notas do tradutor em hipótese alguma.  
-– Traduzir somente o conteúdo das notas existentes, sem alterar sua estrutura.
-
-3.2. Formato  
-– Manter exatamente as marcações de nota já existentes no corpo do texto, no formato [[n]].  
-– Não alterar a posição das chamadas [[n]] no texto.  
-– Não renumerar: a numeração sequencial já foi definida na etapa de limpeza e deve ser preservada.  
-– Traduzir fielmente o conteúdo das notas, mantendo sua forma, extensão e ordem.
-
-3.3. Integridade  
-– O conteúdo da nota deve ser traduzido literalmente, sem acréscimos, adaptações editoriais ou interpretações.  
-– Preservar citações internas, termos estrangeiros, referências bibliográficas e variantes textuais exatamente como aparecem.  
-– Se houver palavras estrangeiras, transliterações ou marcadores especiais, mantê-los conforme o original, traduzindo apenas o que for texto corrente.
-
-3.4. Conteúdo Multilíngue nas Notas (Regra Especial)  
-Algumas notas podem conter expressões originais em grego, latim ou outra língua clássica associados a um termo traduzido no corpo do texto.
-
-Nesses casos:  
-– Preservar integralmente o texto original em grego, latim ou outra língua clássica.
-– Traduzir apenas a parte explicativa em língua corrente.
-Exemplo: 
-Entrada da nota:  
-	[[3]] Im Original: λόγος; wörtlich „Vernunft“, „Rede“.
-Saída traduzida:  
-    [[3]] No original: λόγος; literalmente “razão”, “discurso”.
-
-3.5. Exemplo (modelo de referência inserção e nota no final)  
-Trecho traduzido:
-    “...segundo o argumento[[3]] de Platão.”
-
-Nota traduzida:
-    [[3]] No original: λόγος; literalmente “razão”, “discurso”.
-
-3.5. Quebra e organização  
-– As notas devem aparecer exatamente onde estão no material de entrada.  
-– Manter duas quebras de linha antes de cada nota, caso já estejam assim no original.  
-– Nunca mover notas para o final do texto, a menos que já estejam no final na entrada.
-
-RESULTADO  
-O texto final deve conter:
-1. O corpo traduzido com as chamadas [[n]] intactas.  
-2. As notas traduzidas exatamente na mesma posição e formato onde aparecem.  
-
-Nunca adicionar notas, comentários, explicações ou sugestão editorial.  
-
-
-════════════════════════════════════
-4. TRADUÇÃO TERMINOLÓGICA
-════════════════════════════════════
-
-4.1. Regras gerais  
+7.1. Regras gerais  
 – Tradução sempre sem literaturização: precisão técnica antes de elegância.  
 – Seguir terminologia acadêmica brasileira consagrada.  
 – Manter consistência terminológica ao longo do texto.  
-– São permitidos termos estrangeiros entre itálicos quando consagrados (ex.: *Dasein*, *logos*, *Aufhebung*, *praxis*).
+– São permitidos termos estrangeiros entre itálicos quando consagrados (ex.: Dasein, logos, Aufhebung, praxis).
 
-4.2. Filosofia e teoria crítica  
+7.2. Filosofia e teoria crítica  
 – Verificar uso técnico consagrado no Brasil para autores como:  
   Kant, Hegel, Husserl, Marx, Nietzsche, Aristóteles, Wittgenstein, etc.  
 – Não produzir equivalentes criativos ou inventados sem necessidade.
 
-4.3. Citações  
+7.3. Citações  
 – Preservar o idioma original de citações estrangeiras se estiverem em língua ocidental e adicionar a tradução entre parênteses logo em seguida.  
 – Traduzir citações integradas ao fluxo quando o original também as traduz.  
 – Se houver texto bilíngue (ex.: Kant, Heidegger), seguir a forma encontrada no original.
 
 ════════════════════════════════════
-5.ESTILO DA TRADUÇÃO
+8.ESTILO DA TRADUÇÃO
 ════════════════════════════════════
 
 – Português brasileiro culto, direto e claro.  

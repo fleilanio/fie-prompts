@@ -8,8 +8,12 @@ Aprimorar o texto APÓS a tradução, SEM ALTERAR uma única letra da tradução
 ESTRUTURA DA RESPOSTA
 Sua saída deve ter DOIS BLOCOS:
 
-===== BLOCO 1 — TEXTO ENRIQUECIDO =====
-• Reproduza o texto traduzido EXATAMENTE como foi fornecido, mantendo todos os parágrafos intactos.
+
+===== BLOCO 1 — TEXTO ENRIQUECIDO (COM NOTAS) =====
+
+
+REGRAS ABSOLUTAS PARA O TEXTO PRINCIPAL
+• Reproduza o texto traduzido EXATAMENTE como foi fornecido.
 • NÃO PODE:
   - reescrever,
   - corrigir,
@@ -18,72 +22,91 @@ Sua saída deve ter DOIS BLOCOS:
   - modernizar,
   - alterar vocabulário,
   - mover frases.
-• O texto original é sagrado.
-• Somente é permitido ADICIONAR notas numeradas ao final de parágrafos ou trechos específicos.
+• O texto original é inviolável.
+• Só é permitido ADICIONAR notas de rodapé no corpo do texto.
 
-FORMATO DAS NOTAS:
-• Notas marcadas assim: [[N]] no corpo do texto, onde N é o número da nota.
-• Conteúdo das notas ao final, na seção “Notas do Tradutor”.
-• Numeração sequencial obrigatória.
-• Notas devem ser curtas e objetivas.
-• Exemplo de como ficam as notas.
-		=== NOTAS DE RODAPÉ ===
-		- Exemplo no texto:  
-			“…segundo o argumento[[1]] do autor.”
-		- Exemplo na nota:  
-		[[1]] Conteúdo da nota.
-•Dê duas quebras de linha separando cada nota de rodapé.
+FORMATO DAS NOTAS (PADRÃO MARKDOWN, OBRIGATÓRIO)
+• Chamadas no corpo do texto:
+      [^1], [^2], [^3] ...
+• Definições das notas ao final do BLOCO 1:
+      [^1]: Texto da nota.
+          Continuação da nota (indentada por 4 espaços).
+      [^2]: Texto da nota.
+          Continuação...
+• As notas devem aparecer **somente ao final do BLOCO 1**, na seção **NOTAS DO TRADUTOR**.
+• Numeração sequencial obrigatória, gerada por você.
+• Notas devem ser breves, precisas e informativas.
+• Cada nota deve ter apenas UMA definição.
+• Nunca alterar, traduzir ou modificar `[^n]`.
 
-QUANDO GERAR NOTA (N. do T.):
-Gerar SOMENTE quando necessário para compreensão:
-- Identificação de personagens históricos obscuros.
-- Explicação de conceitos filosóficos, jurídicos, religiosos ou técnicos.
-- Contexto histórico sem equivalente contemporâneo.
-- Termos culturais não traduzíveis diretamente.
-- Nuances semânticas importantes (polissemia, trocadilhos, termos com sentido técnico).
-- Localização geográfica, topônimos e etnônimos específicos.
-- Identificação de obras, livros, escolas filosóficas ou tradições intelectuais.
-- Diferença entre termos muito próximos no original.
-- Ambiguidades que o leitor moderno não percebe.
+EXEMPLOS:
+No corpo:
+    “Segundo o argumento[^1] do autor…”
 
-O QUE NÃO PODE VIRAR NOTA:
-- NÃO PODE Comentários de estilo.
-- NÃO PODE Impressões subjetivas.
-- NÃO PODE Discussões filosóficas extensas.
-- NÃO PODE Avaliações de qualidade do texto.
-- NÃO PODE Notas opinativas.
-- NÃO PODE Interpretações teológicas ou ideológicas.
+Na seção de notas:
+    [^1]: Explicação concisa do termo, conceito ou contexto.
+        Se houver segunda linha, deve ser indentada por 4 espaços.
 
-TÍTULOS EDITORIAIS (opcionais):
-Somente inserir título editorial (entre colchetes) quando:
+SEÇÃO FINAL DE NOTAS
+Ao final do BLOCO 1 você deve inserir, exatamente assim:
+
+=== NOTAS DO TRADUTOR ===
+
+E listar todas as notas no formato Markdown acima.
+
+QUANDO GERAR NOTA (N. do T.)
+Gerar SOMENTE quando necessário para compreensão objetiva:
+• Identificação de personagens históricos obscuros.
+• Conceitos filosóficos, jurídicos, religiosos ou técnicos.
+• Contexto histórico sem equivalente contemporâneo.
+• Termos culturais não traduzíveis diretamente.
+• Nuances semânticas importantes (polissemia, trocadilhos, termos técnicos).
+• Localização geográfica, topônimos e etnônimos.
+• Identificação de obras, livros, escolas filosóficas ou tradições intelectuais.
+• Diferencias entre termos muito próximos no original.
+• Ambiguidades que o leitor moderno não percebe.
+
+O QUE NÃO PODE VIRAR NOTA
+• Comentários de estilo.
+• Impressões subjetivas.
+• Debates filosóficos longos.
+• Avaliações qualitativas.
+• Notas opinativas.
+• Interpretações teológicas ou ideológicas.
+• Qualquer comentário sobre a tradução.
+
+TÍTULOS EDITORIAIS (opcionais)
+Só inserir quando:
 • houver MUDANÇA clara de seção argumentativa,
-• houver transição lógica acentuada,
-• houver mudança temática evidente.
-Os títulos editoriais usam este formato:
-  [Introdução], [Contexto Histórico], [Análise], [Conclusão], etc.
-Não inserir títulos em textos breves ou lineares.
+• transição lógica acentuada,
+• mudança temática evidente.
+Formato:
+    [Introdução], [Contexto Histórico], [Análise], [Conclusão], etc.
+Nunca inserir títulos em textos breves ou estritamente lineares.
 
-===== BLOCO 2 — RELATÓRIO DE MELHORIAS (APÓS O TEXTO, NUNCA MISTURADO) =====
-Depois de concluir o BLOCO 1, gerar um relatório analítico contendo:
-• Pontos onde o vocabulário pode ser revisado (sem alterar o texto).
-• Possíveis arcaísmos a modernizar futuramente.
+
+===== BLOCO 2 — RELATÓRIO DE MELHORIAS =====
+
+Após concluir o BLOCO 1, produzir um relatório técnico contendo:
+
+• Pontos onde o vocabulário pode ser revisado futuramente.
+• Possíveis arcaísmos a modernizar na próxima edição.
 • Trechos ambíguos que podem receber nota adicional.
 • Sugestões de padronização terminológica.
 • Possíveis inconsistências internas percebidas.
 • Comentários sobre coerência editorial ou técnica.
 • Termos que poderiam manter transliteração do original.
-• Sugestões de melhorias na versão futura DA TRADUÇÃO (não aplicar agora).
+• Sugestões para melhorar futuras revisões da TRADUÇÃO (sem alterar agora).
 
 FORMATO DO RELATÓRIO:
 ===== RELATÓRIO DO EDITOR =====
-(seção textual, sem notas, sem alterar nada no BLOCO 1)
+(Seção textual, sem notas, não interfere no BLOCO 1.)
 
-IMPORTANTE
-• O relatório NÃO DEVE alterar o texto.
-• O relatório NÃO DEVE propor reformulação explícita.
-• O relatório NÃO DEVE substituir palavras.
-• O relatório serve apenas como observação para o editor humano.
-• Ele fica completamente separado do texto enriquecido.
+REGRAS DO RELATÓRIO
+• NÃO alterar o texto traduzido.
+• NÃO reformular frases.
+• NÃO substituir palavras.
+• O relatório deve ser descritivo, nunca prescritivo ou intervencionista.
 
 ===== FIM DAS INSTRUÇÕES =====
-Agora aguarde o TEXTO TRADUZIDO para aplicar o enriquecimento.
+Segue o TEXTO TRADUZIDO para aplicar o enriquecimento.
