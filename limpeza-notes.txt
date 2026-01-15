@@ -71,72 +71,117 @@ Regras obrigatórias para reconstrução do fluxo textual:
 
 4. Nunca inserir nova pontuação para compensar quebra.
    Apenas unir e ajustar espaços.
+───────────────────────────────────────────
+3. NOTAS DE RODAPÉ — REGRAS GERAIS (FORMATO MARKDOWN)
+───────────────────────────────────────────
+
+A partir de agora, todas as notas de rodapé devem seguir
+EXCLUSIVAMENTE o formato Markdown padrão:
+
+• Chamadas no corpo do texto:
+    [^1], [^2], [^3]...
+
+• Definições das notas (ao final do texto ou após seção):
+    [^1]: Texto da nota 1
+        Continuação da nota (indentada por 4 espaços)
+    [^2]: Texto da nota 2
+        Continuação...
+
+Regras obrigatórias:
+
+1. **Preservar integralmente o conteúdo de todas as notas.**
+2. **Padronizar todas as chamadas de nota para o formato `[^n]`.**
+3. **A numeração deve ser sequencial, ignorando a numeração original.**
+4. **Notas quebradas, fragmentadas ou espalhadas pelo OCR devem ser unidas.**
+5. **As definições das notas devem ser agrupadas ao final do texto, em bloco único.**
+6. **Cada nota deve ter APENAS UMA definição.**
+7. **Nenhuma nota deve permanecer no corpo do texto como texto corrido: todo o conteúdo deve ir para a definição `[^n]: ...`.**
+8. **Nunca traduzir ou alterar a marcação `[^n]` — apenas o conteúdo.**
+9. **Mesmo que não exista bloco de notas no original, crie as definições.**
 
 ───────────────────────────────────────────
-3. NOTAS DE RODAPÉ — REGRAS GERAIS
+4. FORMAS CORROMPIDAS DE NOTA (OCR) QUE DEVEM SER NORMALIZADAS
 ───────────────────────────────────────────
-- Todo o conteúdo de nota deve ser preservado.
-- Chamadas de nota no corpo devem ser convertidas para:
-  [[1]], [[2]], [[3]]...
-- As notas devem aparecer organizadas ao final do texto.
-- A numeração deve ser sempre sequencial, ignorando a numeração original.
-- Partes quebradas de uma mesma nota devem ser unidas.
 
-───────────────────────────────────────────
-4. COMO AS NOTAS PODEM APARECER EM OCR CORROMPIDO
-───────────────────────────────────────────
-As chamadas de nota podem surgir com formatos irregulares.  
-O modelo deve reconhecê-las como *possíveis* indicações de nota.
+O modelo deve reconhecer automaticamente chamadas irregulares de nota e
+normalizá-las para o padrão Markdown `[^n]`.  
+Os seguintes padrões são considerados *potenciais indicações de nota*:
 
-Alguns formatos comuns em OCR:
+• Superíndices:
+    ¹ ² ³ ⁴ etc.
 
-• Superíndices simples:
-  ¹ ² ³  
+• Entre parênteses:
+    (1), (2), (12)
+    (¹), (²), (¹²)
 
-• Parênteses:
-  (1) (2) (12)
-  (¹) (² (¹²)
-
-• Números soltos imediatamente após uma palavra:
-  Kant 1
-  argumento 3
+• Números soltos após uma palavra:
+    Kant 1
+    argumento 3
 
 • Formatos quebrados:
-  ( 2 )  
-  (n. 3)
+    ( 2 ),  (n. 3)
 
 • Chamadas grudadas ao texto:
-  "como afirma Heidegger3…"  
-  "perspectiva fenomenológica¹…"  
+    Heidegger3
+    fenomenológica¹
 
-• Notas no rodapé com número:
-  1. Texto da nota  
-  2) Texto da nota  
+• Notas listadas ao pé da página:
+    1. Texto da nota
+    2) Texto da nota
+    3 – Texto da nota
+    [3] Texto da nota
 
-Esses padrões são apenas exemplos — o OCR pode variar.  
-A regra é simples: **quando o número parece indicar nota, padronize para [[n]]**.
+Outros sinais possíveis:
+    n.3, no.4, nota 5, (ver 7)
 
-───────────────────────────────────────────
-5. EXEMPLO DE TRANSFORMAÇÃO
-───────────────────────────────────────────
+Regra geral:
+Sempre que um número parecer indicar nota de rodapé, converta:
 
-ENTRADA CORROMPIDA
-"O conceito¹ de intencionalidade é central.  
-Como observa Merleau-Ponty3, a percepção é já mundo.
---- Página 45 ---
-1. Husserl, Ideen I.  
-(3) Merleau-Ponty, Fenomenologia da percepção."
+→ para chamada no corpo:
+      [^n]
 
-SAÍDA ESPERADA
-"O conceito[[1]] de intencionalidade é central.  
-Como observa Merleau-Ponty[[2]], a percepção é já mundo."
-
-[Notas]
-[[1]] Husserl, Ideen I.  
-[[2]] Merleau-Ponty, Fenomenologia da percepção.
+→ para definição ao final:
+      [^n]: texto da nota correspondente
 
 ───────────────────────────────────────────
-6. ESTRUTURA DO TEXTO
+5. REGRAS DE LIMPEZA E AGREGAÇÃO
+───────────────────────────────────────────
+
+• Notas duplicadas devem ser unificadas.
+• Quebras de linha artificiais dentro da mesma nota devem ser removidas.
+• Se a nota tiver continuação, todas as linhas subsequentes devem ser indentadas por 4 espaços.
+• Conteúdos como “ibid.” ou “idem” devem ser preservados, não interpretados.
+• Remover qualquer numeração residual do OCR.
+
+───────────────────────────────────────────
+6. EXEMPLOS (ANTES → DEPOIS)
+───────────────────────────────────────────
+
+ANTES (OCR):
+    Heidegger3 afirma que (...)
+    3. Texto da nota
+    continua
+    mais uma linha
+
+DEPOIS:
+    Heidegger[^1] afirma que (...)
+
+    [^1]: Texto da nota
+        continua
+        mais uma linha
+
+ANTES (OCR):
+    Kant (1) discute (...)
+    (1) Passagem extraída de (...)
+
+DEPOIS:
+    Kant[^1] discute (...)
+
+    [^1]: Passagem extraída de (...)
+
+
+───────────────────────────────────────────
+5. ESTRUTURA DO TEXTO
 ───────────────────────────────────────────
 - Unir parágrafos que foram quebrados artificialmente.
 - Manter parágrafos reais.
@@ -144,11 +189,11 @@ Como observa Merleau-Ponty[[2]], a percepção é já mundo."
 - Não criar títulos que não existam no original.
 
 ───────────────────────────────────────────
-7. FORMATAÇÃO
+6. FORMATAÇÃO
 ───────────────────────────────────────────
 - Organize as notas ao final em uma seção === NOTAS DE RODAPÉ ===.
 - Saída apenas em texto puro.
-- Chamadas no corpo: [[1]], [[2]], [[3]]...
+- Chamadas no corpo: [^1], [^2] [^3]...
 - Lista final de notas: uma nota por linha, duas quebras de linha entre as notas.
 - Não traduza ou reescreva as notas.
 - Não criar notas novas além das existentes no OCR.
@@ -165,7 +210,7 @@ Como observa Merleau-Ponty[[2]], a percepção é já mundo."
 9. SAÍDA FINAL
 ───────────────────────────────────────────
 Entregar somente:
-1) O texto limpo com chamadas [[n]].  
+1) O texto limpo com chamadas [^n].  
 2) A lista de notas reorganizada e renumerada sequencialmente.
 
 Sem comentários adicionais.
