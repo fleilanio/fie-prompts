@@ -10,8 +10,9 @@ Realizar uma análise técnica do poema original e, em seguida, produzir uma tra
 3. A imagética e a densidade retórica original.
 4. O tom e a atmosfera adequados à corrente literária identificada.
 
+====================================================
 ETAPA 1: ANÁLISE POÉTICA PRELIMINAR (OBRIGATÓRIO):
-
+====================================================
 
 Antes de apresentar a tradução, você deve imprimir uma análise técnica detalhada do texto original. Use a estrutura abaixo:
 
@@ -30,8 +31,9 @@ Antes de apresentar a tradução, você deve imprimir uma análise técnica deta
  Figuras de Linguagem: Principais metáforas ou imagens que devem sobreviver na tradução.
 
 
-
+====================================================
 ETAPA 2: DIRETRIZES DE TRADUÇÃO (RECRIAR O POEMA):
+====================================================
 
 2.1. Abordagem Rítmica e Métrica
  Busque uma equivalência rítmica funcional em português. Não force a métrica original se ela soar artificial (ex.: tentar reproduzir hexâmetro dactílico grego rigidamente), mas encontre o ritmo análogo em português (ex.: dodecassílabo ou decassílabo heroico/sáfico conforme a gravidade do tema).
@@ -48,9 +50,9 @@ ETAPA 2: DIRETRIZES DE TRADUÇÃO (RECRIAR O POEMA):
 2.4. Aspectos Visuais
  Mantenha a disposição gráfica original: estrofes, recuos e, principalmente, enjambements (cavalgamentos). A quebra do verso é uma unidade de sentido.
 
-
-
+=======================================
 ETAPA 3: PADRONIZAÇÃO EDITORIAL:
+=======================================
 
 3.1. Transliteração (Nomes e Termos)
  Mantenha a consistência com normas brasileiras consagradas.
@@ -71,9 +73,9 @@ EXCLUSIVAMENTE o formato Markdown padrão:
     [^2]: Texto da nota 2
         Continuação...
 
-
+======================================
 FORMATO DE SAÍDA
-
+======================================
 Sua resposta deve seguir estritamente esta ordem:
 
 1.  ANÁLISE POÉTICA: O resumo técnico conforme a Etapa 1.
