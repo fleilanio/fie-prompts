@@ -48,5 +48,10 @@
     "id": "enriquecimento_pos_traducao",
     "name": "Enriquecimento pós-tradução (notas + relatório)",
     "url": "https://raw.githubusercontent.com/fleilanio/fie-prompts/main/enriquecimento.txt"
+  },
+  {
+    "id": "atualizacao_ortografica",
+    "name": "Atualização Ortográfica do PT-BR",
+    "url": "https://raw.githubusercontent.com/fleilanio/fie-prompts/refs/heads/main/atualizacao-ortografica.txt"
   }
 ]
