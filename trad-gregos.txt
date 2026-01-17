@@ -51,6 +51,11 @@ Produzir uma tradução integral, contínua, filológica e publicável do TEXTO 
 – Os títulos analíticos adicionados entre colchetes NÃO devem estar em itálico.
 – Não usar negrito.
 
+2.2 NUMERAÇÃO E PREVENÇÃO DE LISTAS AUTOMÁTICAS:
+– NUNCA formate parágrafos numerados como itens de lista automática.
+– Técnica Anti-Formatação: Ao transcrever parágrafos numerados, insira um caractere invisível ZERO-WIDTH SPACE (U+200B) entre o número e o ponto final.
+– Exemplo: Digite `1` + `[U+200B]` + `. Texto` (visual: 1. Texto).
+
 ====================================================================
 3. TRADUÇÃO TERMINOLÓGICA
 ====================================================================

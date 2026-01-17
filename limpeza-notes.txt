@@ -26,7 +26,7 @@ e não for possível identificar PALAVRAS REAIS pertencentes a um idioma conheci
 
 → NÃO reconstruir, NÃO preencher, NÃO interpretar e NÃO tentar adivinhar conteúdo.
 
-→ Caso não haja conteúdo recuperável, o modelo deve **APAGAR completamente** o trecho.
+→ Caso não haja conteúdo recuperável, o modelo deve APAGAR completamente o trecho.
 
 → Nunca substituir ruído por frases, ideias, palavras, títulos, informações editoriais ou qualquer tentativa de "restauração".
 
@@ -44,7 +44,7 @@ e não for possível identificar PALAVRAS REAIS pertencentes a um idioma conheci
 - Marcadores de página:  
   --- Página N ---  
   (quando estiverem isolados na linha).
-- Itálicos marcados por *asteriscos*.
+- Itálicos marcados por asteriscos.
 
 ───────────────────────────────────────────
 2. REMOVER / CORRIGIR (APENAS RUÍDO)
@@ -89,15 +89,15 @@ EXCLUSIVAMENTE o formato Markdown padrão:
 
 Regras obrigatórias:
 
-1. **Preservar integralmente o conteúdo de todas as notas.**
-2. **Padronizar todas as chamadas de nota para o formato `[^n]`.**
-3. **A numeração deve ser sequencial, ignorando a numeração original.**
-4. **Notas quebradas, fragmentadas ou espalhadas pelo OCR devem ser unidas.**
-5. **As definições das notas devem ser agrupadas ao final do texto, em bloco único.**
-6. **Cada nota deve ter APENAS UMA definição.**
-7. **Nenhuma nota deve permanecer no corpo do texto como texto corrido: todo o conteúdo deve ir para a definição `[^n]: ...`.**
-8. **Nunca traduzir ou alterar a marcação `[^n]` — apenas o conteúdo.**
-9. **Mesmo que não exista bloco de notas no original, crie as definições.**
+1. Preservar integralmente o conteúdo de todas as notas.
+2. Padronizar todas as chamadas de nota para o formato `[^n]`.
+3. A numeração deve ser sequencial, ignorando a numeração original.
+4. Notas quebradas, fragmentadas ou espalhadas pelo OCR devem ser unidas.
+5. As definições das notas devem ser agrupadas ao final do texto, em bloco único.
+6. Cada nota deve ter APENAS UMA definição.
+7. Nenhuma nota deve permanecer no corpo do texto como texto corrido: todo o conteúdo deve ir para a definição `[^n]: ...`.
+8. Nunca traduzir ou alterar a marcação `[^n]` — apenas o conteúdo.
+9. Mesmo que não exista bloco de notas no original, crie as definições.
 
 ───────────────────────────────────────────
 4. FORMAS CORROMPIDAS DE NOTA (OCR) QUE DEVEM SER NORMALIZADAS
@@ -105,7 +105,7 @@ Regras obrigatórias:
 
 O modelo deve reconhecer automaticamente chamadas irregulares de nota e
 normalizá-las para o padrão Markdown `[^n]`.  
-Os seguintes padrões são considerados *potenciais indicações de nota*:
+Os seguintes padrões são considerados potenciais indicações de nota:
 
 • Superíndices:
     ¹ ² ³ ⁴ etc.
@@ -197,6 +197,12 @@ DEPOIS:
 - Lista final de notas: uma nota por linha, duas quebras de linha entre as notas.
 - Não traduza ou reescreva as notas.
 - Não criar notas novas além das existentes no OCR.
+───────────────────────────────────────────
+6.1. NUMERAÇÃO E PREVENÇÃO DE LISTAS AUTOMÁTICAS
+───────────────────────────────────────────
+- NUNCA formate parágrafos numerados como itens de lista automática.
+- Técnica Anti-Formatação: Ao transcrever parágrafos numerados, insira um caractere invisível ZERO-WIDTH SPACE (U+200B) entre o número e o ponto final.
+- Exemplo: Digite `1` + `[U+200B]` + `. Texto` (visual: 1. Texto).
 
 ───────────────────────────────────────────
 8. MODO DE EXECUÇÃO (MECÂNICO)

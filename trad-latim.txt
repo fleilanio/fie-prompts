@@ -18,11 +18,11 @@ Produzir uma tradução integral, contínua, precisa, filológica e publicável 
 – Manter ordem de capítulos, seções, parágrafos e subseções.
 – Não criar títulos que não existam no original.
 – Preservar:
-  * epígrafes,
-  * divisões e sumários medievais,
-  * símbolos, travessões, marcadores (§, *, —),
-  * citações bíblicas ou patrísticas conforme aparecem,
-  * referências críticas como caput, articulus, quaestio, responsio, obj., solutio.
+   epígrafes,
+   divisões e sumários medievais,
+   símbolos, travessões, marcadores (§, , —),
+   citações bíblicas ou patrísticas conforme aparecem,
+   referências críticas como caput, articulus, quaestio, responsio, obj., solutio.
 – Reproduzir citações bibliográficas sem alteração.
 
 1.2. Paginação e sistemas críticos
@@ -46,10 +46,15 @@ Produzir uma tradução integral, contínua, precisa, filológica e publicável 
 
 2.2. Itálico e títulos
 – Usar itálico para:
-  * títulos de obras (e.g., *Aeneis*, *Confessiones*, *Summa Theologiae*);
-  * termos técnicos latinos quando empregados como conceito (*substantia*, *actus*, *forma*, *habitus*, *essentia*);
-  * termos estrangeiros.
+   títulos de obras (e.g., Aeneis, Confessiones, Summa Theologiae);
+   termos técnicos latinos quando empregados como conceito (substantia, actus, forma, habitus, essentia);
+   termos estrangeiros.
 – Não usar negrito.
+
+2.3.  NUMERAÇÃO E PREVENÇÃO DE LISTAS AUTOMÁTICAS:
+– NUNCA formate parágrafos numerados como itens de lista automática.
+– Técnica Anti-Formatação: Ao transcrever parágrafos numerados, insira um caractere invisível ZERO-WIDTH SPACE (U+200B) entre o número e o ponto final.
+– Exemplo: Digite `1` + `[U+200B]` + `. Texto` (visual: 1. Texto).
 
 ====================================================================
 3. NOTAS DE RODAPÉ (FORMATO MARKDOWN)
@@ -171,20 +176,20 @@ DEPOIS:
 – Priorizar precisão técnica e filológica.
 – Evitar literaturização de textos filosóficos, teológicos ou jurídicos.
 – Manter consistência terminológica ao longo de toda a obra.
-– Termos latinos consagrados podem permanecer em itálico (*species*, *ratio*, *substantia*, *forma*, *actus*, *potentia*, *finis*).
+– Termos latinos consagrados podem permanecer em itálico (species, ratio, substantia, forma, actus, potentia, finis).
 
 4.2. Textos clássicos
 – Para retórica, história e filosofia, consultar terminologia consagrada na tradição brasileira.
-– Não criar equivalentes artificiais para conceitos como *virtus*, *sapientia*, *humanitas*, *res publica*.
+– Não criar equivalentes artificiais para conceitos como virtus, sapientia, humanitas, res publica.
 
 4.3. Latim medieval e escolástico
 – Manter precisão metafísica e lógica, evitando simplificações.
 – Respeitar terminologia tradicional da escolástica.
 – Preservar usos técnicos de:
-  * *ens*, *esse*, *essentia*;
-  * *actus*, *potentia*;
-  * *forma*, *materia*;
-  * *intentio*, *significatio*, *species intelligibilis*.
+   ens, esse, essentia;
+   actus, potentia;
+   forma, materia;
+   intentio, significatio, species intelligibilis.
 
 4.4. Citações
 – Citações latinas: manter o latim; traduzir entre parênteses apenas se o original assim o fizer.

@@ -26,6 +26,11 @@ Produzir uma tradução integral, contínua, precisa e publicável do TEXTO forn
 – Corrigir cortes de palavras ou frases interrompidas no final da linha.  
 – Respeitar quebras reais e organização argumentativa.
 
+5. NUMERAÇÃO E PREVENÇÃO DE LISTAS AUTOMÁTICAS:
+– NUNCA formate parágrafos numerados como itens de lista automática.
+– Técnica Anti-Formatação: Ao transcrever parágrafos numerados, insira um caractere invisível ZERO-WIDTH SPACE (U+200B) entre o número e o ponto final.
+– Exemplo: Digite `1` + `[U+200B]` + `. Texto` (visual: 1. Texto).
+
 =======================================
 2. FORMATAÇÃO E MARCADORES
 =======================================

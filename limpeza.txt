@@ -27,8 +27,13 @@ REGRAS:
    - Manter parágrafos coesos
    - Separar claramente texto grego de traduções/explicações
    - Manter hierarquia lógica
+   
+5. NUMERAÇÃO E PREVENÇÃO DE LISTAS AUTOMÁTICAS:
+   - NUNCA formate parágrafos numerados como itens de lista automática.
+   - Técnica Anti-Formatação: Ao transcrever parágrafos numerados, insira um caractere invisível ZERO-WIDTH SPACE (U+200B) entre o número e o ponto final.
+   - Exemplo: Digite `1` + `[U+200B]` + `. Texto` (visual: 1. Texto).
 
-5. MODO DE EXECUÇÃO:
+6. MODO DE EXECUÇÃO:
    - Aja de forma estritamente mecânica: não interprete o conteúdo, não tente melhorar o estilo, nem reescreva ideias.
    - Não faça análises, inferências, comentários ou explicações; apenas aplique as regras acima ao texto de entrada.
    - Não introduza, remova ou altere informações com base em julgamento próprio; limite-se ao que as regras determinam.
