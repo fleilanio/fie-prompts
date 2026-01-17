@@ -1,7 +1,7 @@
 [
   {
     "id": "limpeza_ocr_padrao",
-    "name": "Limpeza OCR – padrão (remove notas)",
+    "name": "Limpeza OCR – Grego e Árabe (remove notas filológicas)",
     "url": "https://raw.githubusercontent.com/fleilanio/fie-prompts/main/limpeza.txt"
   },
   {
@@ -11,32 +11,32 @@
   },
   {
     "id": "traducao_arabe_filologica",
-    "name": "Tradução árabe (filológica)",
+    "name": "Tradução Árabe (filológica)",
     "url": "https://raw.githubusercontent.com/fleilanio/fie-prompts/main/trad-arabe.txt"
   },
   {
     "id": "traducao_gregos",
-    "name": "Tradução grego clássico",
+    "name": "Tradução Grego Clássico",
     "url": "https://raw.githubusercontent.com/fleilanio/fie-prompts/main/trad-gregos.txt"
   },
   {
     "id": "traducao_latim",
-    "name": "Tradução latim clássico/escolástico",
+    "name": "Tradução Latim Clássico/Escolástico",
     "url": "https://raw.githubusercontent.com/fleilanio/fie-prompts/main/trad-latim.txt"
   },
   {
     "id": "traducao_ocidental",
-    "name": "Tradução línguas ocidentais (acadêmica)",
+    "name": "Tradução de Obras Modernas (acadêmica)",
     "url": "https://raw.githubusercontent.com/fleilanio/fie-prompts/main/trad-ocidental.txt"
   },
   {
     "id": "traducao_literatura",
-    "name": "Tradução literária (prosa, romance etc.)",
+    "name": "Tradução Literária (prosa, romance etc.)",
     "url": "https://raw.githubusercontent.com/fleilanio/fie-prompts/main/trad-literatura.txt"
   },
   {
-    "id": "traducao_teato",
-    "name": "Tradução para teato",
+    "id": "traducao_teatro",
+    "name": "Tradução para Teatro",
     "url": "https://raw.githubusercontent.com/fleilanio/fie-prompts/main/trad-tearto.txt"
   },
   {
@@ -46,7 +46,7 @@
   },
   {
     "id": "enriquecimento_pos_traducao",
-    "name": "Enriquecimento pós-tradução (notas + relatório)",
+    "name": "Enriquecimento Pós-Tradução (notas + relatório)",
     "url": "https://raw.githubusercontent.com/fleilanio/fie-prompts/main/enriquecimento.txt"
   },
   {
