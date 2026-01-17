@@ -200,9 +200,18 @@ DEPOIS:
 ───────────────────────────────────────────
 6.1. NUMERAÇÃO E PREVENÇÃO DE LISTAS AUTOMÁTICAS
 ───────────────────────────────────────────
-- NUNCA formate parágrafos numerados como itens de lista automática.
-- Técnica Anti-Formatação: Ao transcrever parágrafos numerados, insira um caractere invisível ZERO-WIDTH SPACE (U+200B) entre o número e o ponto final.
-- Exemplo: Digite `1` + `[U+200B]` + `. Texto` (visual: 1. Texto).
+TÉCNICA OBRIGATÓRIA:
+Para números seguidos de ponto: Insira um caractere invisível ZERO-WIDTH SPACE (U+200B) imediatamente após o número e antes do ponto.
+Exemplo Prático: Digite 1, depois insira [U+200B], depois digite . e então o texto.
+Resultado Visual e Estrutural: 1​. Texto do parágrafo.
+Para números seguidos de parênteses: Insira o ZERO-WIDTH SPACE (U+200B) imediatamente após o número e antes do parêntese de abertura.
+Exemplo Prático: Digite 1, insira [U+200B], depois digite ) e então o texto.
+Resultado Visual e Estrutural: 1​) Texto do parágrafo.
+POR QUE ISSO FUNCIONA:
+O caractere ZERO-WIDTH SPACE (U+200B) é invisível para o leitor, mas interrompe o padrão reconhecido pelos editores de texto (como Word, Google Docs, interfaces HTML, etc.) que automaticamente convertem sequências como "1." ou "1)" em itens de uma lista numerada. Ele desvincula o número do símbolo que o segue, impedindo a formatação automática.
+
+RESUMO DA REGRA:
+SEMPRE coloque um U+200B entre o dígito e o símbolo (ponto . ou parêntese )) que o acompanha.
 
 ───────────────────────────────────────────
 8. MODO DE EXECUÇÃO (MECÂNICO)
