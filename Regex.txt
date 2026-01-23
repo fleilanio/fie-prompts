@@ -1,0 +1,7 @@
+Buscar ". —" e substituit por quebra de linha no word.
+
+LOCALIZAR CURING: 
+([.])[ ]@—
+
+SUBSTITUIR POR:
+\1^13 —
