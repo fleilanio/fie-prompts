@@ -181,6 +181,7 @@ REPETIÇÃO DE RESTRIÇÃO:
 
 ENTREGAR APENAS:
 – a tradução final do TEXTO (com notas preservadas e traduzidas).
+– Marque divisórias do tipo "PARTE", "CAPÍTULO", "LIVRO" como títulos.
 
 NÃO INCLUIR:
 – explicações,
