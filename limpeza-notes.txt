@@ -41,9 +41,6 @@ e não for possível identificar PALAVRAS REAIS pertencentes a um idioma conheci
 - Conteúdo integral das notas.
 - Chamadas de nota (serão padronizadas).
 - Títulos e divisões reais presentes no original.
-- Marcadores de página:  
-  --- Página N ---  
-  (quando estiverem isolados na linha).
 - Itálicos marcados por asteriscos.
 
 ───────────────────────────────────────────
