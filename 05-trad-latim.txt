@@ -68,23 +68,25 @@ O TEXTO fornecido é um FRAGMENTO (chunk N/M) de obra maior e pode começar/term
 Todas as notas em formato Markdown:
 
 • Chamada no corpo: [^1], [^2], [^3]...
-• Definições ao final, separadas do texto por:
+• Definição no parágrafo IMEDIATAMENTE seguinte ao parágrafo da chamada:
 
-  ## Notas
+  Parágrafo com a chamada[^1].
 
   [^1]: Texto da nota 1
       Continuação (indentada 4 espaços)
+
+  Próximo parágrafo do texto...
 
 Regras:
 1. Preservar integralmente o conteúdo de todas as notas.
 2. Padronizar todas as chamadas para [^n].
 3. Numeração sequencial, ignorando a original.
 4. Notas quebradas/fragmentadas pelo OCR → unir.
-5. Definições agrupadas ao final, em bloco único.
+5. Cada definição vem no parágrafo imediatamente seguinte ao parágrafo
+   da chamada. PROIBIDO bloco "## Notas" ao final — não existe na saída.
 6. Cada nota = UMA definição.
 7. Notas duplicadas → unificar.
 8. Só crie definições se houver chamadas de nota no texto.
-   Se não houver notas, não crie o bloco ## Notas.
 
 3.1. Padrões corrompidos (OCR) a normalizar:
 – Superíndices: ¹ ² ³ ⁴
@@ -176,7 +178,8 @@ REGRA CRÍTICA:
 
 ENTREGAR APENAS:
 1) Tradução integral do TEXTO.
-2) Bloco ## Notas com notas do autor (se houverem).
+2) Definições de nota no parágrafo imediatamente seguinte ao da
+   chamada correspondente (sem bloco "## Notas").
 
 NÃO INCLUA:
 – comentários, explicações, metadados,

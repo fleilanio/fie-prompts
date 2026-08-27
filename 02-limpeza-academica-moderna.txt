@@ -149,21 +149,28 @@ TODAS as notas devem seguir exclusivamente o formato Markdown:
 • Chamada no corpo:
     [^1], [^2], [^3]...
 
-• Definição ao final do texto:
+• Definição no parágrafo IMEDIATAMENTE seguinte ao parágrafo da chamada:
+    Parágrafo com a chamada[^1].
+
     [^1]: Texto da nota 1
         Continuação (indentada por 4 espaços)
-    [^2]: Texto da nota 2
+
+    Próximo parágrafo do texto...
 
 Regras obrigatórias:
 1. Preservar integralmente o conteúdo de todas as notas.
 2. Padronizar TODAS as chamadas para [^n].
 3. Numeração sequencial, ignorando a numeração original.
 4. Notas quebradas/fragmentadas pelo OCR devem ser unidas.
-5. Definições agrupadas ao final, em bloco único.
+5. Cada definição vem no parágrafo IMEDIATAMENTE seguinte ao parágrafo
+   que contém a chamada — nunca agrupadas ao final do texto, nunca em
+   bloco "## Notas de Rodapé". Múltiplas chamadas no mesmo parágrafo →
+   definições em sequência após ele, na ordem das chamadas.
 6. Cada nota = UMA definição apenas.
 7. Nenhuma nota deve permanecer como texto corrido no corpo.
 8. Nunca traduzir ou alterar a marcação [^n].
 9. Notas duplicadas devem ser unificadas.
+10. PROIBIDO criar o bloco "## Notas de Rodapé" — não existe na saída.
 
 ───────────────────────────────────────────
 4. PADRÕES CORROMPIDOS DE NOTA (OCR)
@@ -189,7 +196,9 @@ Regra geral: número com indício de nota → converter para [^n].
 - Manter quebra de parágrafo apenas onde houver linha em branco real
   no original OU separação evidente entre blocos temáticos.
   (Dica: se há linha em branco antes e depois → mantém. Se não há → unir.)
-- Separar corpo do texto e notas.
+- Separar corpo do texto e notas: cada definição vem logo após o
+  parágrafo da chamada, com linha em branco antes e depois.
+  Sem bloco final de notas.
 - Não criar títulos que não existam no original.
 
 ───────────────────────────────────────────
@@ -286,9 +295,9 @@ mantendo separação estrutural clara.
 ───────────────────────────────────────────
 
 - Chamadas no corpo: [^1], [^2], [^3]...
-- Definições ao final, separadas do corpo por:
-
-  ## Notas de Rodapé
+- Definições no parágrafo imediatamente seguinte ao parágrafo da chamada
+  (linha em branco antes e depois da definição).
+- PROIBIDO bloco "## Notas de Rodapé" ao final — não existe na saída.
 - Entre definições: duas quebras de linha.
 - Saída em texto puro (plain text), sem marcação adicional.
 - Não traduzir ou reescrever notas.
@@ -335,10 +344,12 @@ Apenas adicionar, substituir ou reordenar palavras é proibido.
 Antes de entregar, confira (CHECKLIST BLOQUEANTE — falhar em qualquer item = refazer):
 - O texto foi devidamente limpo, com ruídos OCR corrigidos e quebras de linha desnecessárias removidas?
 - Todas as notas originais foram preservadas?
+- Cada definição [^n]: está no parágrafo imediatamente seguinte ao parágrafo da chamada correspondente (nunca agrupada ao final, sem bloco "## Notas de Rodapé")?
 - A numeração ficou sequencial?
 - Capítulos mantêm a numeração original (romana/ arábica/ grega)?
 - Nenhum conteúdo foi resumido, interpretado ou reescrito?
 - Não há comentários, explicações ou metadados na saída?
+- A saída contém algum pensamento da LLM (ex.: "preservo esta linha porque...", "aqui unifiquei...", "notei que...")? Se sim, REMOVA — a saída é exclusivamente o texto limpo + notas [^n]. Nenhum raciocínio, em nenhuma posição (nem antes do texto, nem depois das notas).
 - A saída contém alguma palavra/frase que não existe no texto-fonte?
   Se sim, REMOVA. Isso inclui títulos inventados, "Nota:", comentários
   e resumos.
@@ -369,6 +380,37 @@ SAÍDA
 
 Entregar SOMENTE:
 1) Texto limpo com chamadas [^n].
-2) Lista de notas reorganizada e renumerada.
+2) Definições de nota no parágrafo imediatamente seguinte ao parágrafo
+   da chamada correspondente (sem bloco "## Notas de Rodapé").
 
 Sem comentários adicionais. Sem explicações. Sem saudações.
+
+───────────────────────────────────────────
+REGRA BLOQUEANTE — PUREZA ABSOLUTA DA SAÍDA
+───────────────────────────────────────────
+
+A saída contém SOMENTE o texto limpo e as notas normalizadas.
+Nada além. Nada antes. Nada depois.
+
+PROIBIDO na saída, em QUALQUER posição (início, meio ou fim):
+
+- pensamentos, raciocínios ou reflexões da LLM
+  ("Vou preservar...", "Aqui optei por...", "Neste ponto decidi...");
+- justificativas de decisão, ressalvas ou avisos
+  ("mantive esta nota porque...", "esta passagem parecia ruído");
+- comentários entre colchetes, parênteses ou aspas
+  que não pertençam ao texto original;
+- metadados, cabeçalhos de análise, marcadores de prompt;
+- qualquer palavra ou frase que não exista no texto de entrada
+  (exceto as chamadas [^n] e as definições [^n]: definidas nas
+  Seções 3 e 6).
+
+A PRIMEIRA linha da saída é a primeira linha do texto limpo
+(não um comentário, não um pensamento, não um aviso).
+A ÚLTIMA linha da saída é a última linha do texto limpo.
+
+AUTOVERIFICAÇÃO OBRIGATÓRIA: reler a saída inteira e remover
+qualquer trecho que não seja texto do original revisado mecanicamente
+ou nota normalizada. Se houver UM único pensamento, comentário,
+explicação ou observação, a saída está ERRADA — refaça entregando
+apenas o texto.

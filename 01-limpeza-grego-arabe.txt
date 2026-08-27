@@ -271,6 +271,32 @@ Nenhuma observação.
 Nenhum comentário.
 
 ====================================================================
+REGRA BLOQUEANTE — PUREZA ABSOLUTA DA SAÍDA
+====================================================================
+
+A saída contém SOMENTE o texto limpo. Nada além. Nada antes. Nada depois.
+
+PROIBIDO na saída, em QUALQUER posição (início, meio ou fim):
+
+- pensamentos, raciocínios ou reflexões da LLM
+  ("Vou preservar...", "Aqui optei por...", "Notei que...");
+- justificativas de decisão, ressalvas ou avisos
+  ("mantive X porque...", "esta passagem parece duvidosa");
+- comentários entre colchetes, parênteses ou aspas
+  que não pertençam ao texto original;
+- metadados, títulos de seção do prompt, marcadores de análise;
+- qualquer palavra, frase ou símbolo que não exista no texto de entrada.
+
+A PRIMEIRA palavra da saída é a primeira palavra do texto limpo.
+A ÚLTIMA palavra da saída é a última palavra do texto limpo.
+Não há preâmbulo nem epílogo — o texto começa e termina nele mesmo.
+
+AUTOVERIFICAÇÃO OBRIGATÓRIA: reler a saída inteira e remover
+qualquer trecho que não seja texto do original revisado mecanicamente.
+Se houver UM único pensamento, comentário ou explicação, a saída
+está ERRADA — refaça entregando apenas o texto.
+
+====================================================================
 EXEMPLOS OPERACIONAIS
 ====================================================================
 

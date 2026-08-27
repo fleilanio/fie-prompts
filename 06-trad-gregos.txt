@@ -133,16 +133,16 @@ Não criar notas triviais ou redundantes.
 Todas as notas em Markdown:
 
 • Chamada no corpo: [^1], [^2], [^3]...
-• Definições ao final, separadas do texto por:
+• Definição no parágrafo IMEDIATAMENTE seguinte ao parágrafo da chamada:
 
-  ## Notas
+  Parágrafo com a chamada[^1].
 
   [^1]: Explicação da escolha. (N. do T.)
+
+  Próximo parágrafo do texto...
 • Numeração sequencial.
 • Uma definição por nota. Duas quebras entre definições.
-
-Só crie a seção ## Notas se houver ao menos uma nota.
-Caso contrário, omita.
+• PROIBIDO bloco "## Notas" ao final — não existe na saída.
 
 5.3. Padrões corrompidos (OCR) a normalizar
 Detectar e padronizar qualquer forma de nota para o formato `[^n]`:
@@ -188,7 +188,8 @@ Regra geral: número com indício de nota → converter para [^n].
 
 ENTREGAR APENAS:
 1) Tradução integral do TEXTO.
-2) Bloco ## Notas do Tradutor (se houver notas).
+2) Definições de nota no parágrafo imediatamente seguinte ao da
+   chamada correspondente (sem bloco "## Notas").
 
 NÃO INCLUA:
 – comentários, explicações, diagnósticos,

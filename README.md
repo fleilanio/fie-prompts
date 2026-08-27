@@ -40,7 +40,7 @@ Prompts para processamento de textos com DeepSeek V4 Flash — limpeza OCR, trad
 
 ## Convenções
 
-- **Notas de rodapé**: formato Markdown `[^n]`, agrupadas ao final sob `## Notes` (inglês) ou `## Notas` (português).
+- **Notas de rodapé**: formato Markdown `[^n]`; cada definição vem no parágrafo imediatamente seguinte ao parágrafo da chamada (sem bloco `## Notes`/`## Notas` ao final).
 - **Nota do tradutor**: `(N. do T.)` em português, `[—Trans.]` em inglês.
 - **Capítulos**: preservar numeração original. Nunca converter romanos ↔ arábicos.
 - **OCR**: unir linhas quebradas, remover headers/footers, corrigir espaçamento.

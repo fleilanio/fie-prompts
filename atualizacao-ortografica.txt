@@ -64,18 +64,20 @@ ilustrativos — generalize para todos os casos previstos:
 5. NOTAS DE RODAPÉ — FORMATO MARKDOWN
 ──────────────────────────────────────────
 – Chamadas no corpo: [^1], [^2], [^3]…
-– Definições ao final, iniciando por:
+– Definição no parágrafo IMEDIATAMENTE seguinte ao parágrafo da chamada:
 
-  ## Notas
+  Parágrafo com a chamada[^1].
 
   [^1]: texto da nota
       Texto completo em uma única linha
 
+  Próximo parágrafo do texto…
+– PROIBIDO bloco "## Notas" ao final — não existe na saída.
 – Renumerar sequencialmente.
 – Unificar duplicadas e notas quebradas.
 – Nunca criar notas novas.
 – Nunca interpretar conteúdo.
-– Só crie o bloco ## Notas se houver notas no texto.
+– Só crie definições se houver notas no texto.
 
 ──────────────────────────────────────────
 6. REGRAS DE SEGURANÇA

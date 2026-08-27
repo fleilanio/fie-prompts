@@ -130,11 +130,14 @@ NÃO incluir na saída qualquer análise, identificação ou comentário sobre a
 
 6.2. Formato
 – Normalizar TODAS as chamadas para [^n].
-– Definições agrupadas ao final, separadas do texto por:
+– Definição no parágrafo IMEDIATAMENTE seguinte ao parágrafo da chamada:
 
-  ## Notas
+  Parágrafo com a chamada[^1].
 
-– [^n]: texto completo da nota traduzido em uma única linha
+  [^n]: texto completo da nota traduzido em uma única linha
+
+  Próximo parágrafo do texto...
+– PROIBIDO bloco "## Notas" ao final — não existe na saída.
 – Numeração sequencial, ignorando a original.
 – Uma definição por nota. Duas quebras entre definições.
 – Notas duplicadas → unificar.

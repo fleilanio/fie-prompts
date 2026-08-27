@@ -166,15 +166,14 @@ NOTAS DE RODAPÉ E APARATO CRÍTICO
 
    [^1]: texto completo da nota traduzido em uma única linha
 
-   Definições agrupadas ao final, após:
-
-   ## Notas
+   Cada definição vem no parágrafo IMEDIATAMENTE seguinte ao parágrafo
+   da chamada correspondente. PROIBIDO bloco "## Notas" ao final.
 
 3. Notas de editores/tradutores anteriores: remover.
 
 4. Numeração sequencial, ignorando a original.
 
-5. Só crie o bloco ## Notas se houver notas do autor.
+5. Só crie definições se houver notas do autor.
    Caso contrário, omita.
 
 ════════════════════════════════════
@@ -194,8 +193,8 @@ Não criar notas triviais ou redundantes.
 
 Formato: [^n]: explicação. (N. do T.)
 
-As notas do tradutor vão no mesmo bloco ## Notas,
-junto com as notas do autor.
+As notas do tradutor vão junto com as notas do autor,
+no parágrafo imediatamente seguinte ao da chamada.
 
 5.1. Padrões corrompidos (OCR) a normalizar
 Detectar e padronizar qualquer forma de nota para o formato `[^n]`:
@@ -307,7 +306,8 @@ SAÍDA
 
 ENTREGUE APENAS:
 1) Tradução integral do TEXTO.
-2) Bloco ## Notas com notas do autor e N. do T. (se houverem).
+2) Definições de nota no parágrafo imediatamente seguinte ao da
+   chamada correspondente (sem bloco "## Notas").
 
 NÃO INCLUA: comentários, explicações, diagnósticos,
 pedidos de confirmação, perguntas.
