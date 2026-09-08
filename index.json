@@ -1,0 +1,172 @@
+[
+  {
+    "id": "limpeza_ocr_padrao",
+    "name": "Limpeza OCR – Grego e Árabe (remove notas filológicas)",
+    "url": "https://raw.githubusercontent.com/fleilanio/fie-prompts/main/01-limpeza-grego-arabe.txt",
+    "task_type": "limpeza",
+    "model": "deepseek-v4-flash",
+    "thinking_enabled": false,
+    "reasoning_effort": "high",
+    "max_tokens": 8000
+  },
+  {
+    "id": "limpeza_academica",
+    "name": "Limpeza OCR – Acadêmica Moderna (preserva + renumera notas)",
+    "url": "https://raw.githubusercontent.com/fleilanio/fie-prompts/main/02-limpeza-academica-moderna.txt",
+    "task_type": "limpeza",
+    "model": "deepseek-v4-flash",
+    "thinking_enabled": false,
+    "reasoning_effort": "high",
+    "max_tokens": 8000
+  },
+  {
+    "id": "traducao_arabe_filologica",
+    "name": "Tradução Árabe (filológica)",
+    "url": "https://raw.githubusercontent.com/fleilanio/fie-prompts/main/07-trad-arabe.txt",
+    "task_type": "traducao",
+    "model": "deepseek-v4-flash",
+    "thinking_enabled": true,
+    "reasoning_effort": "high",
+    "max_tokens": 62000
+  },
+  {
+    "id": "traducao_gregos",
+    "name": "Tradução Grego Clássico",
+    "url": "https://raw.githubusercontent.com/fleilanio/fie-prompts/main/06-trad-gregos.txt",
+    "task_type": "traducao",
+    "model": "deepseek-v4-flash",
+    "thinking_enabled": true,
+    "reasoning_effort": "high",
+    "max_tokens": 62000
+  },
+  {
+    "id": "traducao_latim",
+    "name": "Tradução Latim Clássico/Escolástico",
+    "url": "https://raw.githubusercontent.com/fleilanio/fie-prompts/main/05-trad-latim.txt",
+    "task_type": "traducao",
+    "model": "deepseek-v4-flash",
+    "thinking_enabled": true,
+    "reasoning_effort": "high",
+    "max_tokens": 62000
+  },
+  {
+    "id": "traducao_literatura_hermes",
+    "name": "Tradução Literária Hermes",
+    "url": "https://raw.githubusercontent.com/fleilanio/fie-prompts/main/04-trad-literatura-hermes.txt",
+    "task_type": "traducao",
+    "model": "deepseek-v4-flash",
+    "thinking_enabled": true,
+    "reasoning_effort": "high",
+    "max_tokens": 62000
+  },
+  {
+    "id": "traducao_ocidental",
+    "name": "Tradução de Obras Modernas (acadêmica)",
+    "url": "https://raw.githubusercontent.com/fleilanio/fie-prompts/main/03-trad-academica-moderna.txt",
+    "task_type": "traducao",
+    "model": "deepseek-v4-flash",
+    "thinking_enabled": true,
+    "reasoning_effort": "high",
+    "max_tokens": 62000
+  },
+  {
+    "id": "traducao_literatura",
+    "name": "Tradução Literária (prosa, romance etc.)",
+    "url": "https://raw.githubusercontent.com/fleilanio/fie-prompts/main/04-trad-literatura.txt",
+    "task_type": "traducao",
+    "model": "deepseek-v4-flash",
+    "thinking_enabled": true,
+    "reasoning_effort": "high",
+    "max_tokens": 62000
+  },
+  {
+    "id": "traducao_teatro",
+    "name": "Tradução para Teatro",
+    "url": "https://raw.githubusercontent.com/fleilanio/fie-prompts/main/08-trad-teatro.txt",
+    "task_type": "traducao",
+    "model": "deepseek-v4-flash",
+    "thinking_enabled": true,
+    "reasoning_effort": "high",
+    "max_tokens": 62000
+  },
+  {
+    "id": "traducao_espanhol_academica",
+    "name": "Traducción Académica Español",
+    "url": "https://raw.githubusercontent.com/fleilanio/fie-prompts/main/prompt-espanhol/03-trad-academica-espanhol.txt",
+    "task_type": "traducao",
+    "model": "deepseek-v4-flash",
+    "thinking_enabled": true,
+    "reasoning_effort": "high",
+    "max_tokens": 62000
+  },
+  {
+    "id": "traducao_espanhol_literaria",
+    "name": "Traducción Literaria Español",
+    "url": "https://raw.githubusercontent.com/fleilanio/fie-prompts/main/prompt-espanhol/traducao-literaria-espanhol.txt",
+    "task_type": "traducao",
+    "model": "deepseek-v4-flash",
+    "thinking_enabled": true,
+    "reasoning_effort": "high",
+    "max_tokens": 62000
+  },
+  {
+    "id": "traducao_alemao_academica",
+    "name": "Tradução Acadêmica Alemão",
+    "url": "https://raw.githubusercontent.com/fleilanio/fie-prompts/main/prompt-alemao/03-trad-academica-alemao.txt",
+    "task_type": "traducao",
+    "model": "deepseek-v4-flash",
+    "thinking_enabled": true,
+    "reasoning_effort": "high",
+    "max_tokens": 62000
+  },
+  {
+    "id": "traducao_alemao_literaria",
+    "name": "Tradução Literária Alemão",
+    "url": "https://raw.githubusercontent.com/fleilanio/fie-prompts/main/prompt-alemao/04-trad-literaria-alemao.txt",
+    "task_type": "traducao",
+    "model": "deepseek-v4-flash",
+    "thinking_enabled": true,
+    "reasoning_effort": "high",
+    "max_tokens": 62000
+  },
+  {
+    "id": "traducao_ingles_academica",
+    "name": "Academic Translation (into English)",
+    "url": "https://raw.githubusercontent.com/fleilanio/fie-prompts/main/promtps-to-english/03-academic-modern-translation.txt",
+    "task_type": "traducao_ingles",
+    "model": "deepseek-v4-flash",
+    "thinking_enabled": true,
+    "reasoning_effort": "high",
+    "max_tokens": 62000
+  },
+  {
+    "id": "traducao_ingles_literaria",
+    "name": "Literary Translation (into English)",
+    "url": "https://raw.githubusercontent.com/fleilanio/fie-prompts/main/promtps-to-english/04-literary-translation.txt",
+    "task_type": "traducao_ingles",
+    "model": "deepseek-v4-flash",
+    "thinking_enabled": true,
+    "reasoning_effort": "high",
+    "max_tokens": 62000
+  },
+  {
+    "id": "enriquecimento_pos_traducao",
+    "name": "Enriquecimento Pós-Tradução (notas + relatório)",
+    "url": "https://raw.githubusercontent.com/fleilanio/fie-prompts/main/enriquecimento.txt",
+    "task_type": "enriquecimento",
+    "model": "deepseek-v4-flash",
+    "thinking_enabled": true,
+    "reasoning_effort": "high",
+    "max_tokens": 62000
+  },
+  {
+    "id": "atualizacao_ortografica",
+    "name": "Atualização Ortográfica do PT-BR",
+    "url": "https://raw.githubusercontent.com/fleilanio/fie-prompts/refs/heads/main/atualizacao-ortografica.txt",
+    "task_type": "atualizacao",
+    "model": "deepseek-v4-flash",
+    "thinking_enabled": false,
+    "reasoning_effort": "high",
+    "max_tokens": 8000
+  }
+]
